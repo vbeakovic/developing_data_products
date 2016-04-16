@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Developing Data Products Course Project</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Developing Data Products Course Project">
+  <meta name="author" content="Valter Beaković">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Developing Data Products Course Project</h1>
+    <h2>A Shiny app to explore and model the Iris dataset</h2>
+    <p>Valter Beaković<br/>Coursera student</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>About the Shiny app</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>&nbsp;
+&nbsp;</p>
+
+<p>The app provides and interactive interface to explore and model the Iris dataset.</p>
+
+<p>It has three main parts:</p>
+
+<ul>
+<li>Exploring the dataset</li>
+<li>Modeling the dataset</li>
+<li>Comapring the results</li>
+</ul>
+
+<p>Each part is a separate menu item in the navbar.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Exploring the dataset</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>&nbsp;
+&nbsp;</p>
+
+<p>Graphs available:</p>
+
+<ul>
+<li>Scatter plot</li>
+<li>Box plot</li>
+<li>Histogram</li>
+</ul>
+
+<p>Controls available:</p>
+
+<ul>
+<li>Drop lists to select variables to plot</li>
+<li>Sliders to select point size and binwidth</li>
+<li>Checkboxes to add jittered point on boxplot, facet the scatter plot and color the points</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Models</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>To model the data set three algorithms are available:</p>
+
+<ul>
+<li>Regression three (rpart package)</li>
+<li>Random forest (random forest package)</li>
+<li>Gradient boosting machine (gbm package)</li>
+</ul>
+
+<p>Controls:</p>
+
+<ul>
+<li>Checkboxes to select the variables to model with</li>
+<li>Drop list to select the variables to plot</li>
+</ul>
+
+<p>Analysis:</p>
+
+<ul>
+<li>Variables used / Accuracy / Confusion matrix / Measures of statistical performance</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Compare</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>A tabular and graphical side by side comparison of the generated models.</p>
+
+<p>Controls:</p>
+
+<ul>
+<li>Drop list to select the variables to plot</li>
+</ul>
+
+<p>The app is available on shinyapps.io at the following link:
+<a href="https://altervalter.shinyapps.io/iris/">Iris explorer in Shinyapps</a></p>
+
+<p>Thank you!</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='About the Shiny app'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Exploring the dataset'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Models'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Compare'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
